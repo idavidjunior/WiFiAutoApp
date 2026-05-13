@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Configurações de Alertas"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/switchAlertaChegada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alerta na Chegada"
+        android:layout_marginTop="24dp" />
+
+    <Switch
+        android:id="@+id/switchAlertaSaida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alerta na Saída"
+        android:layout_marginTop="16dp" />
+
+    <Switch
+        android:id="@+id/switchAlertaRua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alerta em Modo Rua"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume do Alerta"
+        android:layout_marginTop="24dp" />
+
+    <SeekBar
+        android:id="@+id/sliderVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100" />
+
+    <Button
+        android:id="@+id/btnSalvarConfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_marginTop="32dp" />
+</LinearLayout>

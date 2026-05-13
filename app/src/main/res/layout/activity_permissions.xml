@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saúde de Permissões"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="24dp">
+
+        <ImageView
+            android:id="@+id/ivStatusLocalizacao"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/presence_busy" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Localização (Sempre)"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btnPermissaoLocalizacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configurar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/ivStatusBateria"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/presence_busy" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Otimização de Bateria"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btnOtimizacaoBateria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configurar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/ivStatusAdb"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/presence_busy" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Permissão ADB (Write Secure Settings)"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/btnPermissaoAdb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instruções" />
+    </LinearLayout>
+</LinearLayout>

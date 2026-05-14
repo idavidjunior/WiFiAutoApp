@@ -21,11 +21,17 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
+      - name: Accept Android licenses
+        run: yes | sdkmanager --licenses
+
       - name: Make gradlew executable
         run: chmod +x gradlew
 
-      - name: Build APK
-        run: ./gradlew clean assembleDebug --stacktrace --info --debug --no-daemon
+      - name: Clean project
+        run: ./gradlew clean
+
+      - name: Build APK (debug mode)
+        run: ./gradlew assembleDebug --stacktrace --info --no-daemon
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
